@@ -30,3 +30,30 @@ void print_as_matrixes(int *array)
     };
 };
 
+int main()
+{
+
+    int array[40]; // Initialize kiye
+    for (int i = 0; i < 40; i++)
+    {
+        array[i] = rand() % 10; // algo use kiye for random numbers (whatever)
+    };
+
+    int matrixes[5][4][2]
+    for (int a = 0; a < 5; a++)
+    {
+        for (int y = 0; y < 4; y++)
+            for (int x = 0; x < 2; x++)
+                matrixes[a][y][x] = array[a * 8 + x + y * 2];
+    };
+
+    print_as_matrixes(array);
+
+    swap_in_array(array, matrixes);
+    printf("\n\n");
+
+    print_as_matrixes(array);
+
+    return 0;
+}
+
